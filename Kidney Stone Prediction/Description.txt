@@ -1,0 +1,24 @@
+model:Support vectore Classifier
+metric:accuracy_score
+visuals:seaborn(sns)
+Final accuracy:76%
+
+Problem description:
+This project is a Kaggle competion entitled kidney Playground Series. 
+The data given has the columns id, gravity, ph, osmo, cond, urea, calc and target.Target has either 1 or 0 as values ie.1 means have kidney stone and 0 means doesnt have kidney stone.
+
+Approach:
+step 1: Check for non correlated features in the given data with target.
+Used correlation heatmap to identiy the relations.
+Since id doesnt have any correlation ,I dropped 'id' column.
+
+step 2:Determine the appropriate model
+I have decided to use a dictionary having models such as Logistic Regression,KNN,SVM,Gradient Booster,Decision Tree,Random Forest.
+
+I used a function named 'getScore' and 'score' to fit each of the models in the dictionary and find the score of predictions using accuracy score metrics
+
+And by visualizing the accuracies ,I decided to choose SVM ie(Support Vector Classifier) Which has given more accuracy of 74%
+
+Evaluation:
+Here we are given a train and test data in which we have to train our model by train.csv and find the prediction for test.csv. Then we are evaluated with a score by comparing actual values of test data and our prediction.Note: We cannot know the actual target of test data.
+
