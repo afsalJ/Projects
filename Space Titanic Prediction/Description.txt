@@ -1,0 +1,48 @@
+model:Logistic Regression
+accuracy:78%
+metrics: inbiult .score() method of Ligistic Regression
+Diagrams: crosstab() bar chart using Pandas Library
+
+
+1.Data Description:
+No of Columns:14
+No of Rows: 8693
+Target : Transported
+
+2.Feature description:
+null values: present
+object: 6 columns
+float: 6 columns
+bool: 1 columns
+
+3.Analsis on Object columns:
+- use stacked bar chart
+- identify how each distinct values affecting Target column.
+- If it seems to have to no effect remove it.
+- drop the columns ['PassengerId', 'Name', 'Destination','Cabin']
+
+
+4.Analysis on float columns:
+- use mean difference grouped by target column to understand the relation
+- such that all the float columns are related to target.
+
+5.Filling NA values:
+- age : fill the median 
+- Room Service = fill mean
+- Spa: fill mean
+- VRDeck : fill mean
+- FoodCourt: fill mean
+- ShoppingMall: fill mean
+
+6.Type converstion
+- all object to category codes
+- all float to int 
+- target column to category codes
+
+
+7.Building model
+- import package LogisticRegression from sklearn.linear_model 
+- split xtrain,xtest, ytrain and ytest
+- fit the model
+
+8.Submit the model...
