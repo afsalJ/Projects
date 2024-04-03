@@ -1,0 +1,16 @@
+
+Algorithm:
+
+step 1: Find the steepest descent by using the derivative of mean squared error function by each m(slope) and b(bias) which is initialized with 0.
+
+step 2: Move in the opposite direction of the steepest descent by
+
+           m = current_m - m_gradient * L 
+
+           b = current_b - b_gradient * L
+
+           Where L is the learning rate, I fixed it as 0.0001.
+
+step 3: Repeat step 2 until we get same m and b values 5 times
+
+step 4: now your m and b values are identified, so use it in the function to predict for new x values.
