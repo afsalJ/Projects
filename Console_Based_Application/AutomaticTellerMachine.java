@@ -91,7 +91,7 @@ public class AutomaticTellerMachine {
 									//transfer amount
 									System.out.print("BANK NAME (RECIEVER) : ");
 									String bank_name_rec = scanner.next();
-									if(admin.getBanks().containsKey(bank_name_rec){
+									if(admin.getBanks().containsKey(bank_name_rec)){
 										Bank r = admin.getBanks().get(bank_name_rec);
 										System.out.print("ACCOUNT NUMBER (RECIEVER) : ");
 										String ac_no_reciever = scanner.next();
