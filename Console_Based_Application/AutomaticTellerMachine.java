@@ -89,17 +89,27 @@ public class AutomaticTellerMachine {
 								case 6:
 								{
 									//transfer amount
-									System.out.print("ACCOUNT NUMBER (RECIEVER) : ");
-									String ac_no_reciever = scanner.next();
-									if(b.getCustomer().containsKey(ac_no_reciever)){
-										System.out.print("ENTER THE AMOUNT : ");
-										long amt = scanner.nextLong();
-										Customer c2=b.getCustomer().get(ac_no_reciever);
-										c.Transfer(amt, c2);
+									System.out.print("BANK NAME (RECIEVER) : ");
+									String bank_name_rec = scanner.next();
+									if(admin.getBanks().containsKey(bank_name_rec){
+										Bank r = admin.getBanks().get(bank_name_rec);
+										System.out.print("ACCOUNT NUMBER (RECIEVER) : ");
+										String ac_no_reciever = scanner.next();
+										if(r.getCustomer().containsKey(ac_no_reciever)){
+											System.out.print("ENTER THE AMOUNT : ");
+											long amt = scanner.nextLong();
+											Customer c2=r.getCustomer().get(ac_no_reciever);
+											c.Transfer(amt, c2);
+										}
+										else{
+											System.out.println("ACCOUNT DOESN'T EXIST");
+										}
+										
 									}
 									else{
-										System.out.println("ACCOUNT DOESN'T EXIST");
+										System.out.println("BANK DOESN'T EXIST");
 									}
+									
 									break;
 								}
 								case 7:
