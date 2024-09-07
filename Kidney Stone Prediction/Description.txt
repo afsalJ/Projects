@@ -7,6 +7,9 @@ Problem description:
 This project is a Kaggle competion entitled kidney Playground Series. 
 The data given has the columns id, gravity, ph, osmo, cond, urea, calc and target.Target has either 1 or 0 as values ie.1 means have kidney stone and 0 means doesnt have kidney stone.
 
+Meta data:
+(8, 414)
+
 Approach:
 step 1: Check for non correlated features in the given data with target.
 Used correlation heatmap to identiy the relations.
