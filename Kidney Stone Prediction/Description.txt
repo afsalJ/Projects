@@ -1,4 +1,4 @@
-model:Support vectore Classifier
+model:Support vector Classifier
 metric:accuracy_score
 visuals:seaborn(sns)
 Final accuracy:76%
