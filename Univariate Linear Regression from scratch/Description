@@ -1,6 +1,6 @@
 Meta Data:
 (3, 2500)
-column names: Index, Height, wieght
+column names: Index, Height(Inches), wieght(Pounds)
 Algorithm:
 
 step 1: Find the steepest descent by using the derivative of mean squared error function by each m(slope) and b(bias) which is initialized with 0.
