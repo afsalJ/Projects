@@ -2,7 +2,7 @@ This is a learning project which solely focuses on understanding the concept of 
 where we are going to identify m and b of the equation mx+b. We are using weight as our target column.
 
 Meta Data:
-(3, 2500)
+(2, 2500)
 column names: Index, Height(Inches), wieght(Pounds)
 Algorithm:
 
